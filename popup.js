@@ -381,7 +381,7 @@ function getTogglCredentials(workspaceFunction) {
     return getTogglUserId(apiKey)
         .then(function(response) {
             if (response) {
-                userId = response.data.id;
+                userId = response.id;
 
                 return getDefaultTogglWorkspace(apiKey, workspaceFunction)
             } else {
